@@ -1,0 +1,581 @@
+/* Reset */
+.socialwallbody, .dcsns ul, .dcsns li {
+	padding: 0; 
+	margin:0 auto; text-align:center;
+	list-style: none!important;
+	background: none;
+}
+
+/* Main styles */
+/* Feeds */
+.dcsns {
+    color: #444;
+    list-style: none outside none;
+    margin: 0;
+    /*padding: 20px 0 15px 205px;*/
+}
+.dcsns ul {
+	overflow: visible !important;
+}
+.dcsns h1 {
+    width: auto;
+	position: relative;
+}
+.dcsns h1, .dcsns h2, .dcsns h3 {
+    line-height: 1.35em;
+}
+.dcsns-content {
+	position: relative;
+	padding: 0;
+}
+.dcsns-loading {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/loading_light.gif) no-repeat 0 0;
+	height: 24px;
+	padding: 6px 0 0 30px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.dcsns-toolbar .dcsns-loading {
+	right: 10px;
+	left: auto;
+}
+.stream p {
+	margin: 0;
+	padding: 0;
+}
+.stream li a {
+	color: #FFF;
+ /* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+    -ms-word-break: break-all;
+    word-break: break-all;
+    /* Non standard for webkit */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.stream li {
+    font-size: 15px;
+    padding: 0px;
+    /*width: 390px;*/
+	width: calc(25% - 34px);
+	position: relative;
+	margin: 7px;
+	text-align: center;
+	font-weight: 300;
+	line-height: 1.5em;
+	background-size: 100%;
+	border: none;
+	}
+	@media screen and (max-width: 1200px) { 
+	.stream li { width: calc(33% - 34px); }
+	
+	}	
+	@media screen and (max-width: 900px) { 
+	.stream li { width: calc(50% - 34px); }
+	
+	}	
+	@media screen and (max-width: 600px) { 
+	.stream li { width: calc(100% - 34px); }
+	
+	}
+
+	
+.stream li .inner {
+	overflow: hidden;
+	padding: 0;
+	border-radius:5px;
+}
+.stream li .icon {
+	position: relative;
+	display: block;
+	margin: 5px auto 15px auto;
+	z-index: 3;
+	background: #622584;
+	background: rgba(98, 37, 132, 0.7);
+	padding: 5px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%; 
+	/* **** */
+	display: none;
+}
+.stream li .section-intro {
+    padding: 11px 0;
+	left: 0;
+	bottom: 0px;
+	position: relative;
+	color: #fff;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	font-size: 12px;
+	z-index: 2;
+	width: 100%;
+	margin-top:-3px;
+	margin-left: 0;
+	margin-right: 0;
+	display: inline-block;
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/images/facebook.png) no-repeat 17px center  #1f2639;
+	/* text-indent: 17px; */
+}
+.stream li .clear {
+	clear: both;
+}
+
+
+
+
+/* Content blocks */
+
+.stream li .section-intro a {
+	text-decoration: none;
+	color: #fff;
+}
+.stream li .section-intro a:hover {
+	text-decoration: underline;
+}
+.stream li .section-title {
+}
+.stream li .section-title a {
+	color: #FFF;
+	text-decoration: none;
+}
+.stream li .section-title a:hover {
+	text-decoration: underline;
+}
+.stream li .section-thumb {
+	float: left;
+	margin: 0;
+	width: calc(100% - 2px);
+	margin:0 0 -5px 0;
+	border:1px solid #666;
+	border-bottom:0;
+}
+.stream li .section-text img, .stream li .section-thumb img {
+	background: #fff;
+	width:100%;
+	height:auto;
+	border:0; 
+	border-radius:5px;
+/*	margin:0 0 -5px 0;*/
+	margin:0;
+}
+.stream li .section-text img.emoji {width:23px; background:none;}
+.stream li .section-text {
+	display: block;
+	color: #FFF;
+	overflow: hidden;
+	width: calc(100% -  2px);
+	display: inline-block;
+	text-align: center;
+	margin:0;
+	border: 1px solid #666;
+	border-bottom:0;
+}
+.stream li .section-text span.twitter-text, .stream li .section-title, .stream li.dcsns-facebook .section-text span, .stream li.dcsns-instagram span.section-text  {padding:20px; display:inline-block; width:auto;}
+.stream li.dcsns-facebook .section-text span {max-height:204px; overflow:hidden;}
+.stream li .section-text br {
+	display: block;
+}
+.stream li .section-user {
+	clear: both;
+	display: block;
+	font-style: italic;
+	margin: 0 8px 5px 0;
+	display: block;
+	float: left;
+	padding: 7px 0 0 15px;
+	line-height: 12px;
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/profile.png) no-repeat 0 7px;
+	/* *** */
+	display: none;
+}
+.stream li .meta {
+	display: block;
+	font-size: 90%;
+	color: #999;
+}
+.stream li .meta span {
+	margin: 0 8px 5px 0;
+	display: block;
+	float: left;
+	padding: 0 0 0 15px;
+	line-height: 12px;
+}
+.meta span.shares {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/shares.png) no-repeat 0 0;
+	padding-left: 20px;
+}
+.meta span.views {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/views.png) no-repeat 0 0;
+	padding-left: 18px;
+}
+.meta span.likes {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/likes.png) no-repeat 0 0;
+	padding-left: 16px;
+}
+.meta span.comments {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/comments.png) no-repeat 0 0;
+}
+.meta span.users {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/users.png) no-repeat 0 0;
+}
+.meta span.videos {
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/videos.png) no-repeat 0 0;
+	padding-left: 16px;
+}
+.stream li .section-meta {
+	display: block;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+.stream li .meta.item-comments {
+	padding: 0 0 0 35px;
+	margin: 0 0 5px 0;
+	min-height: 30px;
+	position: relative;
+	clear: both;
+	line-height: 1.3em;
+}
+.stream li .meta.item-comments img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+}
+.stream li .meta.item-likes {
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	line-height: 1.3em;
+}
+.stream li .meta.item-likes img {
+	float: left;
+	margin: 0 5px 5px 0;
+	width: 30px;
+	border: 1px solid #ddd;
+	padding: 1px;
+	background: #fff;
+}
+.stream li.dcsns-error {
+	color: #990000;
+}
+.stream li .section-share {
+	display: none;
+
+}
+.stream li .section-share a {
+	display: block;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 0 2px 0 0;
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/share.png) no-repeat 0 0;
+}
+.stream li .section-share a.share-twitter {
+	background-position: 0 -16px;
+}
+.stream li .section-share a.share-reply {
+	background-position: 0 -32px;
+}
+.stream li .section-share a.share-retweet {
+	background-position: 0 -48px;
+}
+.stream li .section-share a.share-favorite {
+	background-position: 0 -64px;
+}
+.stream li .section-share a.share-google {
+	background-position: 0 -80px;
+}
+.stream li .section-share a.share-linkedin {
+	background-position: 0 -96px;
+}
+.stream li .section-share a.share-facebook:hover {
+	background-position: -16px 0;
+}
+.stream li .section-share a.share-twitter:hover {
+	background-position: -16px -16px;
+}
+.stream li .section-share a.share-reply:hover {
+	background-position: -16px -32px;
+}
+.stream li .section-share a.share-retweet:hover {
+	background-position: -16px -48px;
+}
+.stream li .section-share a.share-favorite:hover {
+	background-position: -16px -64px;
+}
+.stream li .section-share a.share-google:hover {
+	background-position: -16px -80px;
+}
+.stream li .section-share a.share-linkedin:hover {
+	background-position: -16px -96px;
+}
+/* Toolbar */
+.dcsns-toolbar {
+	display: none;
+	/*padding: 0;
+	width: 100%;
+	overflow: hidden;
+	position: relative;*/
+}
+/* Filter */
+#wall {
+	padding-top: 15px;
+}
+#wall .dcsns-toolbar {
+	margin-bottom: 25px;
+}
+.dcsns-toolbar .filter {
+	padding: 0 0 0 100px;
+	margin: 0 0 15px 0;
+}
+.dcsns-toolbar .filter li {
+	display: inline;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+.dcsns-toolbar .filter .link-all {
+	color: #fff;
+	height: 21px;
+	padding: 7px 7px 4px 7px;
+	text-shadow: 0 0 1px #555;
+	font-weight: bold;
+}
+.dcsns-toolbar .filter li a {
+	padding: 4px 3px 0 3px;
+	margin: 0 1px 1px 0;
+	display: block;
+	float: left;
+	background: #777;
+	height: 28px;
+}
+.dcsns-toolbar .filter li img {
+	margin: 0;
+	height: 24px;
+}
+/* Controls */
+.dcsns .controls {
+	position: absolute;
+	right: 0;
+	top: 7px;
+	height: 22px;
+	padding: 0;
+	z-index: 12;
+}
+.dcsns .controls li {
+	display: inline;
+	background: none;
+}
+.dcsns .controls a {
+	display: block;
+	width: 22px;
+	height: 22px;
+	float: left;
+	margin: 0 0 0 2px;
+	background: url(/web/20220407170919im_/https://www.woodsidehighschool.co.uk/inc/social/images/controls.png) no-repeat 0 0;
+}
+.dcsns .controls .prev {
+	background-position: -44px 0;
+}
+.dcsns .controls .next {
+	background-position: -66px 0;
+}
+.dcsns .controls .play {
+	background-position: 0 0;
+}
+.dcsns .controls .pause {
+	background-position: -22px 0;
+}
+.dcsns .controls .prev:hover {
+	background-position: -44px -22px;
+}
+.dcsns .controls .next:hover {
+	background-position: -66px -22px;
+}
+.dcsns .controls .play:hover {
+	background-position: 0 -22px;
+}
+.dcsns .controls .pause:hover {
+	background-position: -22px -22px;
+}
+
+/* feeds network specific styles */
+.stream li.dcsns-rss .section-intro, .filter .f-rss a:hover {
+	background-color: #FF9800;
+}
+.stream li.dcsns-flickr .section-intro, .filter .f-flickr a:hover {
+	background-color: #f90784;
+}
+.stream li.dcsns-delicious .section-intro, .filter .f-delicious a:hover {
+	background-color: #3271CB;
+}
+.stream li.dcsns-twitter .section-intro, .filter .f-twitter a:hover {
+}
+.stream li.dcsns-facebook .section-intro, .filter .f-facebook a:hover {
+}
+.stream li.dcsns-google .section-intro, .filter .f-google a:hover {
+	background-color: #2d2d2d;
+}
+.stream li.dcsns-youtube .section-intro, .filter .f-youtube a:hover {
+	background-color: #DF1F1C;
+}
+.stream li.dcsns-pinterest .section-intro, .filter .f-pinterest a:hover {
+	background-color: #CB2528;
+}
+.stream li.dcsns-lastfm .section-intro, .filter .f-lastfm a:hover {
+	background-color: #C90E12;
+}
+.stream li.dcsns-dribbble .section-intro, .filter .f-dribbble a:hover {
+	background-color: #F175A8;
+}
+.stream li.dcsns-vimeo .section-intro, .filter .f-vimeo a:hover {
+	background-color: #4EBAFF;
+}
+.stream li.dcsns-stumbleupon .section-intro, .filter .f-stumbleupon a:hover {
+	background-color: #EB4924;
+}
+.stream li.dcsns-deviantart .section-intro, .filter .f-deviantart a:hover {
+	background-color: #EB4924;
+}
+.stream li.dcsns-tumblr .section-intro, .filter .f-tumblr a:hover {
+	background-color: #365472;
+}
+.stream li.dcsns-instagram .section-intro, .filter .f-instagram a:hover {
+	background-color: #413A33;
+}
+
+/* Facebook */
+.stream li.dcsns-facebook .section-text img {
+	margin: 5px 3px 0px 3px;
+	float: none;
+	border: 1px solid #256d7b;
+	padding: 1px;
+	background: #fff;
+	max-width: 192px;
+}
+.stream li.dcsns-facebook .section-text a {
+	margin-right: 4px;
+}
+.stream li.dcsns-facebook .section-intro a {
+}
+.stream li.dcsns-facebook .meta {
+	display: block;
+	clear: both;
+}
+.stream li.dcsns-facebook .meta.item-comments {
+	padding: 0;
+	min-height: auto;
+}
+.stream li.dcsns-facebook .meta.item-comments a {
+	display: block;
+	margin: 0 0 2px 0;
+}
+.stream li.dcsns-facebook .share-facebook {
+	display: none;
+}
+/* twitter */
+.stream li.dcsns-twitter .section-thumb {
+	margin-top: 3px;
+}
+.stream li.dcsns-twitter span.twitter-text {
+	margin-top: -4px;
+}
+
+.stream li.dcsns-twitter .section-thumb img {
+	width: 48px; 
+	height: 48px;
+}
+.stream li.dcsns-twitter .section-user {
+	padding: 0;
+	background: none;
+}
+
+.stream li.dcsns-twitter a {
+}
+.stream li.dcsns-twitter .section-intro a, .stream li.dcsns-twitter .section-intro a:hover {
+}
+.stream li.dcsns-twitter .section-intro span a {
+	text-decoration: none;
+	margin-left: 0;
+}
+.stream li.dcsns-twitter .section-intro span a:hover {
+	text-decoration: underline;
+}
+
+.stream li.dcsns-twitter .twitter-user {
+	margin-bottom: 2px;
+	display: none;
+}
+.stream li.dcsns-twitter .twitter-user a {
+	color: #999;
+	line-height: 1.35em;
+}
+.stream li.dcsns-twitter .twitter-user a:hover {
+	color: #999;
+	text-decoration: none;
+}
+.stream li.dcsns-twitter .twitter-user a strong{
+	color: #444;
+}
+.stream li.dcsns-twitter .twitter-user a:hover strong {
+	color: #38AEAE;
+	text-decoration: underline;
+}
+/* google */
+.stream li.dcsns-google .section-title {
+	margin-bottom: 5px;
+}
+.dcsns .stream li.dcsns-google .section-thumb img {
+	max-width: 192px;
+}
+.stream li.dcsns-google .meta span.plusones {
+	padding-left: 0;
+}
+/* rss */
+.stream li.dcsns-rss .section-text img {
+	border: 1px solid #256d7b;
+	padding: 1px;
+	background: #fff;
+	max-width: 192px;
+}
+.stream li.dcsns-instagram .section-thumb {margin-bottom:0 !important;}
+.stream li.dcsns-instagram span.section-text {padding-top:15px;}
+
+
+.stream .inner span.section-text a {
+	color: #FFF;
+	text-decoration: underline;
+}
+.stream .inner span.section-text a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*
+     FILE ARCHIVED ON 17:09:19 Apr 07, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:15:03 Aug 20, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.546
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.011
+  esindex: 0.01
+  cdx.remote: 7.81
+  LoadShardBlock: 91.084 (3)
+  PetaboxLoader3.datanode: 218.178 (6)
+  load_resource: 409.081 (2)
+  PetaboxLoader3.resolve: 257.92 (2)
+  loaddict: 25.159
+*/
